@@ -1,4 +1,4 @@
-import React from 'react'
+import {  Link,Events, animateScroll as scroll, scrollSpy, } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -13,24 +13,24 @@ const Header = () => {
       <div className="grow flex items-center">
         <ul className="navbar-nav mr-auto lg:flex lg:flex-row">
           <li className="nav-item">
-            <a className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Accueil</a>
+            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="#!">Accueil</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Nos Séances</a>
+            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="#!" >Nos Séances</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Calendrier</a>
+            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="#!">Calendrier</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">A Propos</a>
+            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="#!" >A Propos</Link>
           </li>
           <li className="nav-item mb-2 lg:mb-0">
-            <a className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Contact</a>
+            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="#!">Contact</Link>
           </li>
         </ul>
         <div className="flex items-center justify-center p-2 rounded-full shadow-md">
