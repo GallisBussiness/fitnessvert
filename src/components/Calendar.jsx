@@ -3,8 +3,8 @@ import { GoCalendar } from 'react-icons/go'
 const Calendar = () => {
   return (
     <>
-    <div classNameName="w-4/5 my-3 p-4 mx-auto">    
-<div className="w-full relative overflow-x-scroll shadow-md sm:rounded-lg">
+    <div classNameName="w-4/5 my-3 p-4 mx-auto" id="calendar">    
+<div className="w-full relative overflow-x-scroll shadow-md sm:rounded-lg h-96">
 <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 <tr>

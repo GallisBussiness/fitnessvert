@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-    <div className="w-4/5 mx-auto my-3">
+    <div className="w-4/5 mx-auto my-3" id="contact">
       <h1 className="text-3xl font-semibold uppercase text-green-700">Notre Localisation</h1>
     </div>
   <iframe className="w-4/5 mx-auto my-3"

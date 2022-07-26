@@ -2,7 +2,7 @@
 const About = () => {
   return (
     <>
-    <div className="flex p-2 my-3 h-96">
+    <div className="flex p-2 my-3" id="about">
   <div className="flex flex-col md:flex-row bg-white">
     <img className="w-full md:w-1/2 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="/images/salle.jpeg" alt="salle" />
     <div className="p-6 flex flex-col space-y-6 items-center w-full md:w-1/2">

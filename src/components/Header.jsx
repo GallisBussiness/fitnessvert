@@ -1,6 +1,12 @@
-import {  Link,Events, animateScroll as scroll, scrollSpy, } from 'react-scroll';
+import { useEffect } from 'react';
+import {  Link,scrollSpy, } from 'react-scroll';
 
 const Header = () => {
+
+  useEffect(() => {
+    scrollSpy.update();
+  },[])
+
   return (
     <>
      <header>
@@ -13,24 +19,35 @@ const Header = () => {
       <div className="grow flex items-center">
         <ul className="navbar-nav mr-auto lg:flex lg:flex-row">
           <li className="nav-item">
-            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              to="#!">Accueil</Link>
+            <Link
+             className="cursor-pointer nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              spy={true} smooth={true} offset={50} duration={500}
+              to="accueil">Accueil</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              to="#!" >Nos Séances</Link>
+            <Link 
+            className="cursor-pointer nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="seance"
+              spy={true} smooth={true} offset={50} duration={500}
+               >Nos Séances</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              to="#!">Calendrier</Link>
+            <Link className="cursor-pointer nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="calendar"
+              spy={true} smooth={true} offset={50} duration={500}
+              >Calendrier</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              to="#!" >A Propos</Link>
+            <Link className="cursor-pointer nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="about"
+              spy={true} smooth={true} offset={50} duration={500}
+               >A Propos</Link>
           </li>
           <li className="nav-item mb-2 lg:mb-0">
-            <Link className="nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-              to="#!">Contact</Link>
+            <Link className="cursor-pointer nav-link block pr-2 lg:px-2 py-2 font-bold text-green-700 uppercase hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+              to="contact"
+              spy={true} smooth={true} offset={50} duration={500}
+              >Contact</Link>
           </li>
         </ul>
         <div className="flex items-center justify-center p-2 rounded-full shadow-md">

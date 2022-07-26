@@ -1,12 +1,12 @@
 const Services = () => {
   return (
     <>
-     <div className="w-4/5 mx-auto my-3 p-4 flex items-center space-x-1">
-         <div className="w-1/4">
+     <div className="space-y-2 md:space-y-0 w-4/5 mx-auto my-3 p-4 flex flex-col md:flex-row items-center space-x-1">
+         <div className="w-full md:w-1/4">
          <div className="flex justify-center">
         <div className="rounded-lg shadow-lg bg-white max-w-sm">
              <a href="#!">
-      <img className="rounded-t-lg h-72 w-72 object-cover object-top" src="/images/musculation.jpeg" alt=""/>
+      <img className="rounded-t-lg h-72 w-full object-cover object-top" src="/images/musculation.jpeg" alt=""/>
     </a>
     <div className="p-6">
       <h5 className="text-gray-900 text-2xl font-medium mb-2">Espace Musculation</h5>
@@ -17,11 +17,11 @@ const Services = () => {
   </div>
             </div>
          </div>
-         <div className="w-1/4">
+         <div className="w-full md:w-1/4">
          <div className="flex justify-center">
         <div className="rounded-lg shadow-lg bg-white max-w-sm">
              <a href="#!">
-      <img className="rounded-t-lg h-72 w-72 object-cover object-top" src="/images/fitness.jpg" alt=""/>
+      <img className="rounded-t-lg h-72 w-full object-cover object-top" src="/images/fitness.jpg" alt=""/>
     </a>
     <div className="p-6">
       <h5 className="text-gray-900 text-2xl font-medium mb-2">Les cours de Fitness</h5>
@@ -32,11 +32,11 @@ const Services = () => {
   </div>
             </div>
          </div>
-         <div className="w-1/4">
+         <div className="w-full md:w-1/4">
          <div className="flex justify-center">
         <div className="rounded-lg shadow-lg bg-white max-w-sm">
              <a href="#!">
-      <img className="rounded-t-lg h-72 w-72 object-cover object-top" src="/images/cardio.jpeg" alt=""/>
+      <img className="rounded-t-lg h-72 w-full object-cover object-top" src="/images/cardio.jpeg" alt=""/>
     </a>
     <div className="p-6">
       <h5 className="text-gray-900 text-2xl font-medium mb-2">Espace Cardio-Training</h5>
@@ -47,11 +47,11 @@ const Services = () => {
   </div>
             </div>
          </div>
-         <div className="w-1/4">
+         <div className="w-full md:w-1/4">
          <div className="flex justify-center">
         <div className="rounded-lg shadow-lg bg-white max-w-sm">
              <a href="#!">
-      <img className="rounded-t-lg h-72 w-72 object-cover object-top" src="/images/ves.jpg" alt=""/>
+      <img className="rounded-t-lg h-72 w-full object-cover object-top" src="/images/ves.jpg" alt=""/>
     </a>
     <div className="p-6">
       <h5 className="text-gray-900 text-2xl font-medium mb-2">Les vestiaires</h5>
